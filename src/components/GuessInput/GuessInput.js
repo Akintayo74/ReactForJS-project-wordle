@@ -9,15 +9,17 @@ function GuessInput() {
         onSubmit={(event) => {
           event.preventDefault();
           console.log(guessInput);
+          setGuessInput('');
         }}
       > 
         <label for="guess-input">Enter guess:</label>
         <input 
           id="guess-input" 
           type="text"
+          pattern="[a-z]{5}"
           value={guessInput}
           onChange={(event) => {
-            setGuessInput(event.target.value)
+            setGuessInput(event.target.value);
           }}
         />
       </form>
