@@ -96,10 +96,6 @@ h1 {
   margin-bottom: 4px;
 }
 
-input {
-  text-transform: uppercase;
-}
-
 .cell {
   position: relative;
   width: 20%;
