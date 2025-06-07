@@ -7,7 +7,7 @@ function Guess( {value, answer} ) {
 
   return (
     <>
-      {value && console.log(checkGuess(value, answer))}
+      {/* {value && console.log(checkGuess(value, answer))} */}
       <p className="guess">
         {range(5).map((num) => (
           <span className={`cell ${checkedGuess ? checkedGuess[num].status : ''}`} key={num}>
